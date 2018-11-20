@@ -1,0 +1,59 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.banner
+		.owl-carousel.owl-theme
+			.item
+				img(src="img/banner_img_01.png", alt="", srcset="")
+				.title
+					h2 Chúng tôi là Fullstack Việt Nam
+					p Fullstack Developer là nghề cực hot hiện nay, những lập trình viên Full stack có đầy đủ các kỹ năng tổng hợp
+			.item
+				img(src="img/banner_img_02.png", alt="", srcset="")
+	section.news.container
+		.row
+			.col
+				h2.title tin tức
+					span
+		.row
+			.col-lg-4
+				a(href="#")
+					.item
+						figure
+							.blocking
+								img(src="img/news_img_01.png", alt="")
+						ficaption
+							.title
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								p 18/11/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique quisquam odio perspiciatis delectus, tenetur quod ab voluptas, laboriosam laborum aliquam voluptate.
+			.col-lg-4
+				a(href="#")
+					.item
+						figure
+							.blocking
+								img(src="img/news_img_02.png", alt="")
+						ficaption
+							.title
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								p 18/11/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique quisquam odio perspiciatis delectus, tenetur quod ab voluptas, laboriosam laborum aliquam voluptate.
+			.col-lg-4
+				a(href="#")
+					.item
+						figure
+							.blocking
+								img(src="img/news_img_03.png", alt="")
+						ficaption
+							.title
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								p 18/11/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis. Debitis saepe aliquid rem atque. Labore dignissimos similique quisquam odio perspiciatis delectus, tenetur quod ab voluptas, laboriosam laborum aliquam voluptate.

@@ -1,0 +1,26 @@
+header
+	background: #fff
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		padding: 0.5rem
+		z-index: 10
+		border-radius: 4px
+		img 
+			max-height: 2rem
+	.navbar-nav
+		.nav-item
+			text-transform: uppercase
+			font-weight: bold
+			margin: 0 -15px 1px
+			&:hover,
+			&.active
+				background: $sen
+				.nav-link
+					color: #fff
+			.nav-link
+				padding-left: .5rem 
+		+media-breakpoint-up(md)
+				.nav-item
+					margin: 0
+					margin-left: 1px

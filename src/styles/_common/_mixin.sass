@@ -1,0 +1,32 @@
+// Các Mixin viết vào đây
+=duong-ke-duoi($width: 10%, $tren: 0.5rem, $phai: auto, $duoi: 1rem, $trai: auto)
+	position: relative
+	height: 3px
+	background: $sen
+	width: $sen
+	display: block
+	margin: $tren $phai $duoi $trai
+	&:before,
+	&:after
+		display: block
+		content: ''
+	&:before
+		width: 0
+		height: 0
+		border-top: 3px solid $warning
+		border-left: 3px solid transparent
+		position: absolute
+		left: -3px
+	&:after
+		width: 0
+		height: 0
+		border-bottom: 3px solid $warning
+		border-right: 3px solid transparent
+		position: absolute
+		right: -3px
+=btn($trenduoi: 0.5rem, $traiphai: 2rem)
+	border-radius: 0
+	background: $warning
+	border: 1px solid $warning
+	padding: $trenduoi $traiphai
+	color: #fff
