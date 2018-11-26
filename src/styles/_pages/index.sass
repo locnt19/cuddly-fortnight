@@ -1,6 +1,3 @@
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
 .banner
 	margin-bottom: 3rem
 	.owl-carousel
@@ -52,35 +49,16 @@
 					opacity: 1
 				button.owl-next
 					opacity: 1
-
-
 .news
-	.row
-		.col
-			h2.title 
-				text-align: center
-				text-transform: uppercase
-				margin-bottom: 3rem
-				span
-					display: block
-					position: relative
-					&:before,
-					&:after
-						display: block
-						content: ''
-					&:before
-						width: 100px
-						height: 0
-						border: 2px solid $sen
-					&:after
-						width: 20px
-						height: 20px
-						border: 4px solid $sen
-						border-radius: 50%
-						position: absolute
-						left: 40px
-						top: -10px
-						background: #fff
+	margin-bottom: 3rem
+	.title 
+		h2
+			text-align: center
+			text-transform: uppercase
+			// margin-bottom: 3rem
+			span
+				+duong-ke-ngang()
+				margin: 1rem auto
 	a
 		text-decoration: none
 		color: #3e3e3e
@@ -100,7 +78,7 @@
 							height: 100%
 							content: ''
 							display: block
-							box-shadow: 0 0 0px 5px $sen inset
+							box-shadow: 0 0 0px 7px $sen inset
 							z-index: 5
 							position: absolute
 							transition: .5s all ease-in-out
@@ -114,3 +92,19 @@
 							opacity: 1
 						img 
 							filter: grayscale(0%)
+.promo
+	background-image: url('../img/promo_bg.png')
+	padding: 3rem 0
+	.title
+		h2 
+			text-align: center
+			text-transform: uppercase
+		span
+			margin: 1rem auto
+			+duong-ke-ngang()
+	.content
+		text-decoration: none
+		color: #3e3e3e 
+		h3
+			font-weight: bold
+			text-transform: uppercase
