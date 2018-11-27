@@ -1,16 +1,14 @@
 =duong-ke-ngang()
 	display: block
 	position: relative
+	width: 100px
+	height: 4px
+	background: $sen
 	&:before,
 	&:after
 		display: block
 		content: ''
 	&:before
-		position: absolute
-		width: 100px
-		height: 0
-		border: 2px solid $sen
-	&:after
 		width: 20px
 		height: 20px
 		border: 4px solid $sen

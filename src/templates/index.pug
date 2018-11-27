@@ -22,9 +22,8 @@ block body
 		.container
 			.row
 				.col
-					.title
-						h2 tin tức
-							span
+					h2.title tin tức
+						i
 			.row
 				.col-lg-4
 					a(href="#")
@@ -63,9 +62,8 @@ block body
 		.container
 			.row
 				.col
-					.title 
-						h2 định hướng phát triển
-						span
+					h2.title định hướng phát triển
+						i 
 			.row
 				.col-md-3
 					a.content(href="#")
@@ -91,3 +89,96 @@ block body
 							i.fa.fa-moon-o.fa-5x
 						h3 tầm nhìn
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, explicabo quasi velit, itaque deleniti expedita dolorum, ipsa cum distinctio dolorem quos dolor atque repellendus neque. Laboriosam quia harum facere nobis.
+	section.about
+		.container
+			.row
+				.col
+					.title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam delectus rerum rem tempore aspernatur suscipit, nisi ipsam neque deserunt praesentium facilis quis id incidunt ratione consequuntur aperiam eveniet! Doloremque distinctio amet, fugit sint labore odio. Vitae laudantium, molestias beatae quia ea a. Voluptatibus sed repellendus esse odio, expedita excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores optio repellat explicabo iste consequatur id quis aspernatur hic at aliquid.
+					button.btn Xem thêm
+	section.orient 
+		.container
+			.row
+				.col
+					h2.title#z định hướng phát triển
+						i 
+			.row
+				.col 
+					.tabs
+						ul#ac
+							li.active
+								a(href="#z", onclick="filter('all')") Tất cả
+							li
+								a(href="#z", onclick="filter('group')") Group
+							li
+								a(href="#z", onclick="filter('thitruong')") Thị trường
+							li
+								a(href="#z", onclick="filter('tinvit')") Tin vịt
+			.row
+				.col
+					.data-tabs
+						.owl-carousel.owl-theme
+							.item.all.group
+								.blocks
+									img(src="img/news_img_01.png", alt="")
+							.item.all.thitruong
+								.blocks
+									img(src="img/news_img_02.png", alt="")
+							.item.all.tinvit
+								.blocks
+									img(src="img/news_img_03.png", alt="")
+							.item.all.group
+								.blocks
+									img(src="img/news_img_01.png", alt="")
+							.item.all.group
+								.blocks
+									img(src="img/news_img_01.png", alt="")
+							.item.all.thitruong
+								.blocks
+									img(src="img/news_img_02.png", alt="")
+							.item.all.thitruong
+								.blocks
+									img(src="img/news_img_02.png", alt="")
+							.item.all.tinvit
+								.blocks
+									img(src="img/news_img_03.png", alt="")
+							.item.all.tinvit
+								.blocks
+									img(src="img/news_img_03.png", alt="")
+							.item.all.thitruong
+								.blocks
+									img(src="img/news_img_02.png", alt="")
+							.item.all.group
+								.blocks
+									img(src="img/news_img_01.png", alt="")
+	section.review
+		.container
+			.row
+				.col
+					h2.title khách hàng nói
+						i 
+			.row
+				.col-md-6.offset-md-3
+					.avatar
+						.owl-carousel.owl-theme
+							.item
+								figure
+									img(src="img/customer_img_01.png", alt="")
+								ficaption
+									span Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus. Quos perspiciatis aut deleniti enim explicabo quasi, distinctio, maxime inventore ipsum officiis blanditiis officia unde modi magnam sint fugit eius accusantium.
+									h3 Pelican Steve
+										span CEO ABC Company
+							.item
+								figure
+									img(src="img/customer_img_01.png", alt="")
+								ficaption
+									span Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus. Quos perspiciatis aut deleniti enim explicabo quasi, distinctio, maxime inventore ipsum officiis blanditiis officia unde modi magnam sint fugit eius accusantium.
+									h3 Pelican Steve
+										span CEO ABC Company
+							.item
+								figure
+									img(src="img/customer_img_01.png", alt="")
+								ficaption
+									span Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellendus. Quos perspiciatis aut deleniti enim explicabo quasi, distinctio, maxime inventore ipsum officiis blanditiis officia unde modi magnam sint fugit eius accusantium.
+									h3 Pelican Steve
+										span CEO ABC Company
+	section.partner
