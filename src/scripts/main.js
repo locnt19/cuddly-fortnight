@@ -1,4 +1,3 @@
-// 1.home-banner
 $(document).ready(function () {
 	$('.banner .owl-carousel').owlCarousel({
 		nav: true,
@@ -11,9 +10,13 @@ $(document).ready(function () {
 	$('.orient .data-tabs .owl-carousel').owlCarousel({
 		nav: false,
 		dots: false,
-		items: 3,
-		loop: true
-		// navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+		items: 1,
+		loop: true,
+		responsive: {
+			768: {
+				items: 3
+			}
+		}
 	});
 
 	$('.review .avatar .owl-carousel').owlCarousel({
@@ -30,27 +33,32 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.partner .owl-carousel').owlCarousel({
+		nav: true,
+		dots: false,
+		items: 2,
+		loop: true,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		responsive: {
+			768: {
+				items: 5
+			}
+		}
+	});
+
+
 });
 
 function filter(e) {
-	let dung  = 0;
-	let sai  = 0;
-	$(this).parents('.tabs').find('li').toggleClass('active')
-	// $('.orient .data-tabs .owl-item .item').each(function () {
-	// 	$(this).parents('.owl-item').show()
-	// 	if($(this).hasClass(e) == true) {
-	// 		$(this).parents('.owl-item').show()
-	// 		dung++
-	// 	}
-	// 	else {
-	// 		$(this).parents('.owl-item').hide()
-	// 		sai++
-	// 	}
-	// })
-	console.log('dung = ', dung)
-	console.log('sai = ', sai)
+	$('.orient .data-tabs .owl-carousel .item').show();
+	$('.orient .data-tabs .owl-carousel .item').each(function () {
+		if($(this).hasClass(e) == true) {
+			$(this).show();
+			dung++;
+			console.log('dung');
+		}
+		else {
+			$(this).hide();
+		}
+	})
 }
-
-// $('.tabs ul li a').on('click', function(){
-// 	$(this).parents('.tabs').find('li').toggleClass('active')
-// })

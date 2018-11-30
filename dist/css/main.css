@@ -6679,4 +6679,37 @@ footer {
     .review .avatar .owl-carousel .owl-dots .owl-dot.active span, .review .avatar .owl-carousel .owl-dots .owl-dot:hover span {
       background: #2196f3; }
 
+.partner {
+  padding: 3rem 0; }
+  .partner .owl-carousel {
+    position: relative; }
+    .partner .owl-carousel .item {
+      margin: 0 2rem; }
+      .partner .owl-carousel .item img {
+        width: 100%; }
+    .partner .owl-carousel .owl-nav {
+      margin-top: 1rem;
+      width: 100%; }
+      .partner .owl-carousel .owl-nav button.owl-next,
+      .partner .owl-carousel .owl-nav button.owl-prev {
+        background: #083e64;
+        color: #fff;
+        width: 30px;
+        height: 30px; }
+        .partner .owl-carousel .owl-nav button.owl-next i,
+        .partner .owl-carousel .owl-nav button.owl-prev i {
+          line-height: 30px;
+          font-size: .8rem; }
+    @media (min-width: 768px) {
+      .partner .owl-carousel .owl-nav {
+        margin: 0;
+        position: absolute;
+        top: 15%; }
+        .partner .owl-carousel .owl-nav button.owl-prev {
+          position: absolute;
+          left: -35px; }
+        .partner .owl-carousel .owl-nav button.owl-next {
+          position: absolute;
+          right: -35px; } }
+
 /*# sourceMappingURL=main.css.map */

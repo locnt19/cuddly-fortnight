@@ -227,5 +227,34 @@
 					&:hover
 						span
 							background: $sen
-
-
+.partner
+	padding: 3rem 0
+	.owl-carousel
+		position: relative
+		.item
+			margin: 0 2rem
+			img 
+				width: 100%
+		.owl-nav
+			margin-top: 1rem
+			width: 100%
+			button.owl-next,
+			button.owl-prev
+				background: #083e64 
+				color: #fff
+				width: 30px
+				height: 30px
+				i 
+					line-height: 30px
+					font-size: .8rem
+		+media-breakpoint-up(md)
+			.owl-nav
+				margin: 0
+				position: absolute
+				top: 15%
+				button.owl-prev
+					position: absolute
+					left: -35px
+				button.owl-next
+					position: absolute
+					right: -35px
